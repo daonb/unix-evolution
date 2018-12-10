@@ -1,11 +1,15 @@
-Linux CLI - manning the oligarchy 
-=====================================
+OSX/Linux CLI and its evolution
+===============================
 
 Thanks to the 
 [Unix History Repo](https://github.com/dspinellis/unix-history-repo) we have
-a copy of the man pages of System 7, from 1979. It's a piece of archieology  
-that can help understand toda
-start 
+a copy of the man pages from one of Linux's ancient forefather -
+the seventh version. 
+![Unix Histroy](images/Unix_history-simple.svg)
+
+The man pages are key as they define the system. When stallman and the other
+GNUs set out to create a free Unix clone, they started by coding the libraries
+and developing tools that work exactly as the commands defined in Unix's man.
 
 ```bash
 

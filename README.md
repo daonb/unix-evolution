@@ -1,5 +1,5 @@
-OSX/Linux CLI and its evolution
-===============================
+Unix CLI and its evolution
+==========================
 
 Thanks to the 
 [Unix History Repo](https://github.com/dspinellis/unix-history-repo) we have

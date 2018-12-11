@@ -55,5 +55,7 @@ $ dpkg -l
 $ !! | wc
 $ man apt help
 # tools
+$ man ack
 $ man rclone
+$ man jq
 ...

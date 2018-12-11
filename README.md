@@ -7,50 +7,53 @@ a copy of the man pages from one of Linux's ancient forefather -
 the seventh version. 
 ![Unix Histroy](images/Unix_history-simple.svg)
 
-The man pages are key as they define the system. When stallman and the other
-GNUs set out to create a free Unix clone, they started by coding the libraries
+The man pages are what defines the system. All executables, system & library calls, special files, file formats and sys admin commands are well defined in the man. When stallman and the otherGNUs set out to create a free Unix clone, they started by coding the libraries
 and developing tools that work exactly as the commands defined in Unix's man.
+
+This repo contains a copy of System 7 man pages from 1979. 
+
+The chars below where typed in a presentation in PyWebIl #78 in Tel aviv, exploring the evolution of the shell:
 
 ```bash
 
-man man
-man -l version7/man1/cp.1
-man -l version7/man1/tar.1
-man -l version7/man1/find.1
-man -l version7/man1/sh.1
-man stdio # what makes an executable a unix command
-curl wttr.in/tlv
-man bash
-/history exp
-q
-!! | head -7
-man curl
+$ man man
+$ ls version7/man1
+$ man -l version7/man1/cp.1
+$ man -l version7/man1/tar.1
+$ man -l version7/man1/find.1
+# stdio is the API that all commands share
+$ man stdio 
+$ curl wttr.in/tlv
+$ !! | head -7
+# FAIL! the progress bar kills the pipe
+$ man curl
 /silent
 n
 q
-curl -s !c:1-$ 
-!! | tail -5
-alias tlv="!!"
-tlv
-echo !! >> ~/.bashrc
-tail !:$
-# DARN! what's the "tlv" doing there?
-ed ~/.bashrc
+$ curl -s !c:1-$ 
+$ !! | tail -5
+$ alias tlv="!!"
+$ tlv
+$ echo !! >> ~/.bashrc
+$ tail !:$
+# FAIL! what's the "tlv" doing there?
+$ ed ~/.bashrc
 $p
 $d
 $p
 w
 q
-!alias
-echo !! >> ~/.bashrc
-!tail
-source !e:$
+$ !alias
+$ echo !! >> ~/.bashrc
+$ !tail
+$ source !e:$
 # Debian
-man dpkg
+$ man dpkg
 /EX
 q
-dpkg -l
-!! | wc
-man apt help
+$ dpkg -l
+$ !! | wc
+$ man apt help
 # tools
-man rclone
+$ man rclone
+...
